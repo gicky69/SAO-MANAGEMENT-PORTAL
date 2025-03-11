@@ -11,11 +11,12 @@
     <main> 
         <!--- Sign-in/sign-up page--->
         <section class="hero">
-            <div class="signIn"> 
+            <div class="signIn active"> 
+                <!-- LEFT SIGN-IN -->
                 <div class="left-signIn">
                     <h1 class="label-signIn"> Sign-in </h1>
                  
-                    <form action="  " method="post"> 
+                    <form action="" method="post"> 
                         <div class="form-signIn">
                             <label for="signin-schoolEmail"> <b>School Email</b> </label> <br>
                             <input type="text" id="signin-schoolEmail" name="signin-schoolEmail" class="form-control" placeholder="Enter your school email" required> <br>
@@ -23,15 +24,40 @@
                             <input type="password" id="signin-password" name="signin-password" class="form-control" placeholder="Enter your password" required> <br>
                         </div>
                         <div class="form-row">
-                            <div class="form-check-label"> 
-                            <input class="checkbox form-check-input" type="checkbox" value="" id="flexCheckDefault"> <span> Remember me</span>
+                            <div class="form-check"> 
+                            <input class="checkbox form-check-input" type="checkbox" value="" id="flexCheckDefault"> 
+                            <label class="form-check-label" for="flexCheckDefault"> Remember me </label>
                             </div>
-                            <a href="#"> Forgot password? </a> <br>
+
+                             <a class="forgot-password" id="link-forgotPassword"> Forgot password? </a> 
+                            
                         </div>
 
-                        <button class="btn btn-signIn" id="btn-signIn" type="submit"> <a href="./myorganizations.html">Sign-in</a></button>
+                        <button class="btn btn-signIn" id="btn-signIn" type="submit"> <a href="./myorganizations.html" class="href-signIn">Sign-in</a></button>
                     </form>
                 </div>
+                
+                <!-- LEFT FORGOT PASSWORD -->
+                <div class="left-forgotPassword">
+                    <h1 class="label-forgotPassword"> Forgot Password </h1>
+                 
+                    <form action="  " method="post"> 
+                        <p class="description"> Please enter your email and we'll email you a link to reset your password! </p>
+                        <div class="form-forgotPassword">
+                            <label for="enter-schoolEmail"> <b>School Email</b> </label> <br>
+                            <input type="text" id="signin-schoolEmail" name="signin-schoolEmail" class="form-control" placeholder="Enter your school email" required> <br>
+
+                        </div>                   
+                        <button class="btn btn-submit" id="btn-submit" type="submit"> <a href=".#" class="href-signIn">Submit</a></button>
+                    </form>
+                    <div class="goBack"> 
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <a href="./index.html" class="href-goBack">Go back</a>
+                    </div>
+                     
+                </div>
+
+                <!-- RIGHT SIGN-IN -->
                 <div class="right-signIn"> 
 
                     <div class="contents-right-signIn">
@@ -48,9 +74,10 @@
                     </div>
                 </div>
             </div>
-        
+
+            <!-- SIGN-UP -->
             <div class="signUp"> 
-                <div class="left-signUp">
+                <div class="left-signUp active">
                     <div class="contents-left-signUp">
                         <img src="../images/sao-logo.png" alt="SAO Logo" class="sao-logo"> <br>
                         <h4 class="welcomeTitle welcomeTo"> Create an Account</h4>
@@ -64,7 +91,7 @@
                     </div>
                     
                 </div>
-                <div class="right-signUp"> 
+                <div class="right-signUp active"> 
 
                     <h1 class="label-signUp"> Sign-up </h1>
                     <form> 
@@ -97,5 +124,6 @@
 
 
     <script src="../scripts/02-pages/landing.js"> </script>
+    <script src="https://kit.fontawesome.com/93f7822319.js" crossorigin="anonymous"></script>
 </body>
 </html>

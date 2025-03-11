@@ -31,6 +31,7 @@ main {
             align-items: center;
             text-align: center;
             transition: 0.7s ease-in-out;
+            display: block;
             
             
             .label-signIn {
@@ -48,17 +49,12 @@ main {
                 @include centerItems();
                 display: flex;
                 width: 100%;
-    
-                .form-check-label {
-                    display: flex;
-                    align-items: center;
-                    
-                    span {
-                        margin-left: 10px;
-                    }   
-                }
-                a {
+                align-items: center;
+
+                .forgot-password {
                     margin-left: auto;
+                    color: black;
+                    cursor: pointer;
                 }
             }
     
@@ -69,16 +65,65 @@ main {
                 width: 160px;
                 border-radius: 116px;  
                 font-weight: 600; 
+                
+                .href-signIn {
+                    color: white;
+                    text-decoration: none;
+                }
             }
     
             .btn-signIn:hover {
                 background-color: #2d4ec6;
             }
 
-            a {
-                text-decoration: none;
-                color: white;
+          
+        }
+
+        .left-forgotPassword {
+            opacity: 1;
+            width: 60%;
+            margin: 90px 100px 100px 100px;
+            align-items: center;
+            text-align: center;
+            transition: 0.7s ease-in-out;
+            display: none;
+            
+            .label-forgotPassword {
+                text-align: center;
+                font-weight: bold;
+                margin-bottom: 30px;
             }
+            
+            .form-forgotPassword {
+                text-align: left;
+            }
+    
+            .btn-submit {
+                margin-top: 70px;
+                margin-bottom: 40px;
+                background-color: #213B9A;
+                color: white;
+                width: 160px;
+                border-radius: 116px;  
+                font-weight: 600; 
+                
+                .href-signIn {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+    
+            .btn-submit:hover {
+                background-color: #2d4ec6;
+            }
+
+            .href-goBack {
+                color: black;
+                text-decoration: none;
+                font-weight: bold;
+                margin-left: 10px;
+            }
+          
         }
     
         .right-signIn {
@@ -148,6 +193,7 @@ main {
             background-color: #FBAF41;
             color: black;
             border-radius: 50px 0px 0px 50px;
+            transition: 0.7s ease-in-out;
             
     
             .sao-logo {
@@ -238,6 +284,7 @@ main {
         visibility: visible;
     }
 
+    // SIGN IN
     // right-signIn
     .right-signIn.active {
         border-radius: 50px 0px 0px 50px;
@@ -246,5 +293,15 @@ main {
 
     .left-signIn.active {
         transform: translateX(250px);
+    }
+
+    // SIGN UP
+    .left-signUp.active {
+        border-radius: 50px 0px 0px 50px;
+        transform: translateX(620px);
+    }
+
+    .right-signUp.active {
+        transform: translateX(-250px);
     }
 }

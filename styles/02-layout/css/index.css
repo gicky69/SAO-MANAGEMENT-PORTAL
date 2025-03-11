@@ -41,6 +41,7 @@ main {
   align-items: center;
   text-align: center;
   transition: 0.7s ease-in-out;
+  display: block;
 }
 .hero .signIn .left-signIn .label-signIn {
   text-align: center;
@@ -55,16 +56,12 @@ main {
   align-items: center;
   display: flex;
   width: 100%;
-}
-.hero .signIn .left-signIn .form-row .form-check-label {
-  display: flex;
   align-items: center;
 }
-.hero .signIn .left-signIn .form-row .form-check-label span {
-  margin-left: 10px;
-}
-.hero .signIn .left-signIn .form-row a {
+.hero .signIn .left-signIn .form-row .forgot-password {
   margin-left: auto;
+  color: black;
+  cursor: pointer;
 }
 .hero .signIn .left-signIn .btn-signIn {
   margin-top: 100px;
@@ -74,12 +71,51 @@ main {
   border-radius: 116px;
   font-weight: 600;
 }
+.hero .signIn .left-signIn .btn-signIn .href-signIn {
+  color: white;
+  text-decoration: none;
+}
 .hero .signIn .left-signIn .btn-signIn:hover {
   background-color: #2d4ec6;
 }
-.hero .signIn .left-signIn a {
-  text-decoration: none;
+.hero .signIn .left-forgotPassword {
+  opacity: 1;
+  width: 60%;
+  margin: 90px 100px 100px 100px;
+  align-items: center;
+  text-align: center;
+  transition: 0.7s ease-in-out;
+  display: none;
+}
+.hero .signIn .left-forgotPassword .label-forgotPassword {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.hero .signIn .left-forgotPassword .form-forgotPassword {
+  text-align: left;
+}
+.hero .signIn .left-forgotPassword .btn-submit {
+  margin-top: 70px;
+  margin-bottom: 40px;
+  background-color: #213B9A;
   color: white;
+  width: 160px;
+  border-radius: 116px;
+  font-weight: 600;
+}
+.hero .signIn .left-forgotPassword .btn-submit .href-signIn {
+  color: white;
+  text-decoration: none;
+}
+.hero .signIn .left-forgotPassword .btn-submit:hover {
+  background-color: #2d4ec6;
+}
+.hero .signIn .left-forgotPassword .href-goBack {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 10px;
 }
 .hero .signIn .right-signIn {
   justify-content: center;
@@ -138,6 +174,7 @@ main {
   background-color: #FBAF41;
   color: black;
   border-radius: 50px 0px 0px 50px;
+  transition: 0.7s ease-in-out;
 }
 .hero .signUp .left-signUp .sao-logo {
   width: 25%;
@@ -214,3 +251,10 @@ main {
 .hero .left-signIn.active {
   transform: translateX(250px);
 }
+.hero .left-signUp.active {
+  border-radius: 50px 0px 0px 50px;
+  transform: translateX(620px);
+}
+.hero .right-signUp.active {
+  transform: translateX(-250px);
+}/*# sourceMappingURL=index.css.map */
